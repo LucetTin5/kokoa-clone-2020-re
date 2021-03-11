@@ -1,0 +1,22 @@
+.landscape {
+    position: absolute;
+    top: 0;
+    display: none;
+    visibility: none;
+    z-index: 0;
+}
+
+@media all and (orientation: landscape) {
+    .landscape {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--kokoa-yellow);
+        width: 100vw;
+        height: 100vh;
+        font-size: 40px;
+        font-weight: 700;
+        z-index: 99;
+    }
+}
